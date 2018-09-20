@@ -1,0 +1,17 @@
+ <html>
+     <head>
+         <title>Django blog</title>
+     </head>
+     <body>
+         <div>
+             <h1><a href="">Django blog</a></h1>
+         </div>
+         {% for post in post_list %}
+             <div>
+                 <p>published: {{ post.published_date }}</p>
+                 <h2><a href="">{{ potst.title }}</a></h2>
+                 <p>{{ post.textlinebreaks }}</p>
+             </div>
+        {% endfor %}
+     </body>
+ </html>
